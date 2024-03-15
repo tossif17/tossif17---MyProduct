@@ -1,0 +1,7 @@
+export const REQUEST_PENDING = "REQUEST_PENDING";
+export const REQUEST_SUCCESS = "REQUEST_SUCCESS";
+export const REQUEST_FAILURE = "REQUEST_FAILURE";
+export const DELET_PRODUCT = "DELET_PRODUCT";
+export const CREATE_PRODUCT = "CREATE_PRODUCT";
+export const GET_BY_ID = "GET_BY_ID";
+export const GET_UPDATE_ID = "GET_UPDATE_ID";
