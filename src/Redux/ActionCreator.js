@@ -58,14 +58,14 @@ export const createItem = (newProduct) => {
   };
 };
 
-const baseUrl = `https://tosif-webjob.azurewebsites.net`;
+const baseUrl = `https://tosifwebapp.azurewebsites.net`;
 
 export const getProduct = () => {
   return async (dispatch) => {
     dispatch(fetchData());
     try {
       const response = await axios.get(baseUrl + `/getproducts`);
-      console.log(response);
+      // console.log(response);
 
       dispatch(fetchDataSuccess(response.data));
     } catch {
@@ -87,12 +87,12 @@ export const deletProduct = (itemId) => {
 };
 
 export const createProduct = (value) => {
-  console.log(value);
+  // console.log(value);
   return async (dispatch) => {
     dispatch(fetchData());
     try {
       const create = await axios.post(baseUrl + `/addproduct`, value);
-      console.log(create);
+      // console.log(create);
       dispatch(createItem(create.data));
     } catch {
       dispatch(fetchDataError("internal error"));
@@ -107,7 +107,7 @@ export const getByProductId = (id) => {
       const response = await axios.get(
         baseUrl + `/api/MyProduct/getbyid/${id}`
       );
-      console.log(response);
+      // console.log(response);
 
       dispatch(getById(response.data));
     } catch {

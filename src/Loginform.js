@@ -9,7 +9,7 @@ export const Loginform = () => {
   const [errMsg, setErrMsg] = useState("");
   const navigate = useNavigate();
 
-  const baseUrl = `https://tosif-webjob.azurewebsites.net`;
+  const baseUrl = `https://tosifwebapp.azurewebsites.net`;
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === "email") setEmail(value);

@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/03d0d5c1-5926-4af2-863e-f8f6c231a295/resourceGroups/Training/providers/Microsoft.Web/sites/myproductshop",
+  "appService.deploySubpath": "build"
+}

@@ -14,7 +14,7 @@ const Detail = ({ data, getByProductId }) => {
 
   useEffect(() => {
     if (data.productDetails) {
-      console.log(data.productDetails);
+      // console.log(data.productDetails);
       setProductDetails(data.productDetails);
     }
   }, [data.productDetails]);
@@ -31,7 +31,7 @@ const Detail = ({ data, getByProductId }) => {
               <img
                 src={`data:image/jpeg;base64,${productDetails.image}`}
                 alt="Product"
-                className="product-image mb-3 w-50"
+                className="product-image mb-3 w-25 h-50"
               />
             )}
             <h2 className="text-white">{productDetails.title}</h2>

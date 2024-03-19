@@ -55,7 +55,7 @@ const Product = ({ data, getProducts, deletProducts }) => {
                       <img
                         src={`data:image/jpeg;base64,${item.image}`}
                         alt="Product"
-                        className="product-image w-50"
+                        className="product-image w-50 h-50"
                       />
                       <p className="text-center text-white">{item.title}</p>
                       <p className="text-white">{item.price}</p>

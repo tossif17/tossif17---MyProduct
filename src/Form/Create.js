@@ -49,7 +49,7 @@ const Create = ({ createProducts, getProducts, data }) => {
     e.preventDefault();
     createProducts(value);
     setValue(initialState);
-    console.log(value);
+    // console.log(value);
   };
 
   return (

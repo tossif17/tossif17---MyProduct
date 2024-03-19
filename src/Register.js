@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const baseUrl = `https://tosif-webjob.azurewebsites.net`;
+const baseUrl = `https://tosifwebapp.azurewebsites.net`;
 
 export const Register = () => {
   const data = { name: "", email: "", password: "" };
@@ -12,7 +12,7 @@ export const Register = () => {
 
   const handelChange = (e) => {
     setValue({ ...value, [e.target.name]: e.target.value });
-    console.log(value);
+    // console.log(value);
   };
 
   const handleSubmit = async (e) => {
